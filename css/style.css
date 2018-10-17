@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch:400,700');
+
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  color: #ffffff;
+  background: #131313;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #00ff66;
+}
+
+a:hover {
+  color: #ffcc00;
+}
+
+.container {
+  display: flex;
+  margin-top: 24px;
+  flex-direction: column;
+}
+
+.name > h2 {
+  color: #00ff66;
+}
+
+.name, .bio {
+  text-align: center;
+}
+
+.bio {
+  font-size: 18px;
+  padding: 12px;
+}
+
+.social {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social > div {
+  font-weight: 700;
+  border: 2px solid #00ff66;
+  padding: 2px 4px;
+  margin: 2px;
+}
+
+.social > div:hover {
+  border: 2px solid #ffcc00;
+}
+
+@media all and (max-width: 1024px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  .bio {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 839px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .bio {
+    font-size: 12px;
+  }
+}
